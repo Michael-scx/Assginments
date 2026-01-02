@@ -57,7 +57,7 @@ def display_results(coins, rate, currency):
         print("No results found.")
         return
 
-    print("\n📊 Top Cryptocurrencies\n")
+    print("\n Top Cryptocurrencies\n")
 
     for coin in coins:
         price = coin["current_price"] * rate
@@ -100,7 +100,4 @@ def main():
     save_to_file(processed_data, exchange_rate, currency)
 
     print(" Results saved to crypto_results.txt")
-
-
-
 main()
